@@ -41,8 +41,6 @@ export class Calculator {
     const result = this.calculate(operation, digit1, digit2);
 
     return result;
-
-    console.log(operation);
   }
   private getOperation(operation: string): operation {
     return operation.split(".")[1] as operation;
@@ -91,17 +89,15 @@ export class Calculator {
     if (!digit1 || !digit2) {
       return 0;
     } //error
-    console.log("desde divided_by method:", Dicc[digit1], Dicc[digit2]);
+
     const result = Dicc[digit1] / Dicc[digit2];
-    console.log("Widhout rounding method:", result);
+
     const retultRounded = this.round(result);
-    console.log("Widhout rounding method:", retultRounded);
 
     return retultRounded;
   }
 
   private round(number: number): number {
-    console.log("desde round method:", number);
     const number2 = number * 10;
 
     return Math.round(number2) / 10;
