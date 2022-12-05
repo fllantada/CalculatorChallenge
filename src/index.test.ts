@@ -1,6 +1,6 @@
 import Challenge from "./index";
 
-describe("Challenge", () => {
+xdescribe("Challenge", () => {
   it("should return the correct result", () => {
     const result = Challenge(7362);
     expect(result).toBe("2h1m");

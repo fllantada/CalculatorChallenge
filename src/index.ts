@@ -1,3 +1,5 @@
+import { operatorCreater } from "./valueObjects/operations";
+
 export default function Challenge(x: number): string {
   const seconds = getSeconds(x);
   const minutes = getMinutes(x);
@@ -30,3 +32,5 @@ function getHours(x: number): string {
 
   return hours ? `${hours}h` : "";
 }
+
+console.log("started");
